@@ -1,5 +1,6 @@
 # 17-10-2025
 - added `TODO.md` file
+- added a `dataset` folder to put all csv files containing processed data
 
 # 13-10-2025
 - added multiple folders and files to the dataset
