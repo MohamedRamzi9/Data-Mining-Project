@@ -2,6 +2,7 @@
 # 19-10-2025
 - added `soil.ipynb` notebook in `data_processing` folder to perform exploratory data analysis directly on the loaded soil layers data
 - removed `dataset` folder and `soil.py, elevation.py` files from `data_processing` folder from git
+- cleaned up `soil.ipynb` notebook by separating analysis parts in different cells and adding comments to explain each step
 
 # 18-10-2025
 - changed the code in `soil.py` to generate both csv and nc files containing the layers attributes with averaged coordinates for each SMU ID (might revert back to previous version if needed)
