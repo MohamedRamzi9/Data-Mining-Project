@@ -1,3 +1,13 @@
+
+# 19-10-2025
+- added `soil.ipynb` notebook in `data_processing` folder to perform exploratory data analysis directly on the loaded soil layers data
+- removed `dataset` folder and `soil.py, elevation.py` files from `data_processing` folder from git
+
+# 18-10-2025
+- changed the code in `soil.py` to generate both csv and nc files containing the layers attributes with averaged coordinates for each SMU ID (might revert back to previous version if needed)
+- added code in `elevation.py` to extract and save clipped elevation data as both GeoTIFF and NetCDF formats
+- generated `soil_full.csv, soil_full.nc, elevation_full.nc, elevation_full.tif` files in the `dataset` folder containing processed data for Algeria and Tunisia together
+
 # 17-10-2025
 - added `TODO.md` file
 - added a `dataset` folder to put all csv files containing processed data
