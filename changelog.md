@@ -1,6 +1,7 @@
 
 # 20-10-2025
 - reorganized `soil.ipynb` 
+- added data analysis and visualization for elevation data in `elevation.ipynb` 
 
 # 19-10-2025
 - added `soil.ipynb` notebook in `data_processing` folder to perform exploratory data analysis directly on the loaded soil layers data
