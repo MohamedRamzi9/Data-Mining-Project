@@ -1,4 +1,7 @@
 
+# 24-10-2025
+- added outlier, missing string values and useless and correlated features handling in `elevation.ipynb` notebook
+
 # 20-10-2025
 - reorganized `soil.ipynb` 
 - added data analysis and visualization for elevation data in `elevation.ipynb` 
