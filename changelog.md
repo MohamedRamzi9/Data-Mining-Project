@@ -1,4 +1,7 @@
 
+# 26-10-2025
+- renamed some variables and removed unecessary print statements in `elevation.ipynb, soil.ipynb` notebooks for better readability
+
 # 24-10-2025
 - added outlier, missing string values and useless and correlated features handling in `elevation.ipynb` notebook
 
