@@ -1,4 +1,9 @@
 
+# 09-11-2025
+- added `soil_elevation_merge.ipynb` notebook to merge soil and elevation data based on coordinates
+- changed `soil.ipynb, elevation.ipynb` notebooks to save cleaned data as nc files
+- added `fire.ipynb` notebook to perform exploratory data analysis on fire data
+
 # 26-10-2025
 - renamed some variables and removed unecessary print statements in `elevation.ipynb, soil.ipynb` notebooks for better readability
 
