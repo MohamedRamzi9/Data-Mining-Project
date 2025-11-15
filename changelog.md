@@ -1,4 +1,7 @@
 
+# 10-11-2025
+- added export of cleaned fire data as nc file in `fire.ipynb` notebook
+
 # 09-11-2025
 - added `soil_elevation_merge.ipynb` notebook to merge soil and elevation data based on coordinates
 - changed `soil.ipynb, elevation.ipynb` notebooks to save cleaned data as nc files
