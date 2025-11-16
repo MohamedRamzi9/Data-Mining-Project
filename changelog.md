@@ -1,4 +1,10 @@
 
+# 15-11-2025
+- modified `fire.ipynb` notebook to generate the rest of the positions not in the fire dataset, and balanced the number of fire and no-fire instances for better model training
+- modified `elevation.ipynb` notebook to save the data as .tif files for smaller size and raster operations compatibility
+- modified `soil.ipynb` notebook to save the data as .parquet files for smaller size and faster read/write operations
+- added `merge_datasets.ipynb` notebook to merge fire, soil and elevation datasets based on coordinates
+
 # 10-11-2025
 - added export of cleaned fire data as nc file in `fire.ipynb` notebook
 
