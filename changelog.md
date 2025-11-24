@@ -1,4 +1,8 @@
 
+# 24-11-2025
+- added `random_forest.ipynb` notebook to implement Random Forest classification model on the merged dataset
+- added performance evaluation metrics and confusion matrix visualization to all supervised learning notebooks (`knn.ipynb, decision_tree.ipynb, random_forest.ipynb`)
+
 # 23-11-2025
 - fixed negetive values not being handled properly in `soil.ipynb` notebook
 - added `supervised_learning` folder containing `knn.ipynb` and `decision_tree.ipynb` notebooks to implement KNN and Decision Tree classification models on the merged dataset
