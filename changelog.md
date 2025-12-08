@@ -1,4 +1,7 @@
 
+# 08-12-2025
+- added `dbscan.ipynb` notebook to implement DBSCAN clustering algorithm from scratch and using sklearn version 
+
 # 24-11-2025
 - added `random_forest.ipynb` notebook to implement Random Forest classification model on the merged dataset
 - added performance evaluation metrics and confusion matrix visualization to all supervised learning notebooks (`knn.ipynb, decision_tree.ipynb, random_forest.ipynb`)
