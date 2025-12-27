@@ -49,12 +49,23 @@ def compute_dunn_index(X, labels):
 
     return min_inter / max_intra if max_intra > 0 else np.nan
 
+class ClassificationMetrics:
+    def __init__(self, accuracy, precision, recall, f1_score, roc_auc):
+        self.accuracy = accuracy
+        self.precision = precision
+        self.recall = recall
+        self.f1_score = f1_score
+        self.roc_auc = roc_auc
 
 def show_classification_report(y_true, y_pred):
-    print(f"Accuracy  : {accuracy_score(y_true, y_pred):.4f}  (maximize)")
-    print(f"Precision : {precision_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
-    print(f"Recall    : {recall_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
-    print(f"F1 Score  : {f1_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
+    accuracy = accuracy_score(y_true, y_pred)
+    precision = precision_score(y_true, y_pred, average='binary')
+    recall = recall_score(y_true, y_pred, average='binary')
+    f1 = f1_score(y_true, y_pred, average='binary')
+    print(f"Accuracy  : {accuracy:.4f}  (maximize)")
+    print(f"Precision : {precision:.4f}  (maximize)")
+    print(f"Recall    : {recall:.4f}  (maximize)")
+    print(f"F1 Score  : {f1:.4f}  (maximize)")
     print()
     print(classification_report(y_true, y_pred))
 
@@ -79,6 +90,9 @@ def show_classification_report(y_true, y_pred):
 
     plt.tight_layout()
     plt.show()
+
+    return ClassificationMetrics(accuracy, precision, recall, f1, roc_auc)
+
 
 def show_clustering_report(X, labels):
     """
