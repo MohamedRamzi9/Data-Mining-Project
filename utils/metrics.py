@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from scipy.spatial.distance import cdist, pdist
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
 
 def compute_wcss(X, labels):
     """WCSS: sum of squared distances to cluster centroids"""
@@ -163,6 +165,37 @@ def show_clustering_report(X, labels):
     plt.show()
 
 
+def plot_feature_importances(model, feature_names, top_n=None):
+    """
+    Plot sorted feature importances of a fitted model.
+    
+    :param model: fitted RandomForestClassifier or RandomForestRegressor
+    :param feature_names: list of feature names
+    :param top_n: number of top features to show (all if None)
+    :param figsize: size of the figure
+    :param title: plot title
+    """
+    importances = model.feature_importances_
+    indices = np.argsort(importances)  # descending order
+
+    if top_n is not None:
+        indices = indices[:top_n]
+
+    plt.figure(figsize=(10, 6))
+    plt.barh(range(len(indices)), importances[indices], color='skyblue', edgecolor='black')
+    plt.yticks(range(len(indices)), [feature_names[i] for i in indices])
+    plt.xlabel("Importance")
+    plt.title("Feature Importances")
+
+    # Add numeric values to the bars
+    for i, idx in enumerate(indices):
+        plt.text(importances[idx] + 0.01*importances.max(), i, f"{importances[idx]:.3f}", 
+                 va='center', fontsize=9)
+
+    plt.tight_layout()
+    plt.show()
+
+
 def test_show_classification_report():
     y_true = np.array([0, 1, 1, 0, 1, 0, 1, 1, 0, 0])
     y_pred = np.array([0, 1, 0, 0, 1, 0, 1, 1, 1, 0])
@@ -183,7 +216,18 @@ def test_show_clustering_report():
     ])
     y_pred = np.array([0, 0, 0, 0, 1, 1, 2, 2, 2, -1])  # -1 indicates noise
     show_clustering_report(X, y_pred)
-    
+
+
+def test_plot_feature_importances():
+    data = load_iris()
+    X = data.data
+    y = data.target
+    feature_names = data.feature_names
+
+    model = DecisionTreeClassifier(random_state=42)
+    model.fit(X, y)
+
+    plot_feature_importances(model, feature_names, top_n=4)    
 
 if __name__ == "__main__":
-    test_show_classification_report()
+    test_plot_feature_importances()
