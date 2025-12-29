@@ -96,7 +96,7 @@ def show_classification_report(y_true, y_pred):
     return ClassificationMetrics(accuracy, precision, recall, f1, roc_auc)
 
 
-def show_clustering_report(X, labels):
+def show_clustering_report(X, points, labels):
     """
     Shows clustering report with a histogram of cluster sizes and a scatter plot of the clusters.
 
@@ -146,12 +146,12 @@ def show_clustering_report(X, labels):
 
         if label == -1:
             ax_scatter.scatter(
-                X[mask, 0], X[mask, 1],
+                points[mask, 0], points[mask, 1],
                 s=25, c="black", marker="x", label="Noise"
             )
         else:
             ax_scatter.scatter(
-                X[mask, 0], X[mask, 1],
+                points[mask, 0], points[mask, 1],
                 s=25, label=f"Cluster {label}", edgecolors='k', linewidth=0.3
             )
 
