@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from scipy.spatial.distance import cdist, pdist
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
 
 def compute_wcss(X, labels):
     """WCSS: sum of squared distances to cluster centroids"""
@@ -49,12 +51,23 @@ def compute_dunn_index(X, labels):
 
     return min_inter / max_intra if max_intra > 0 else np.nan
 
+class ClassificationMetrics:
+    def __init__(self, accuracy, precision, recall, f1_score, roc_auc):
+        self.accuracy = accuracy
+        self.precision = precision
+        self.recall = recall
+        self.f1_score = f1_score
+        self.roc_auc = roc_auc
 
 def show_classification_report(y_true, y_pred):
-    print(f"Accuracy  : {accuracy_score(y_true, y_pred):.4f}  (maximize)")
-    print(f"Precision : {precision_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
-    print(f"Recall    : {recall_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
-    print(f"F1 Score  : {f1_score(y_true, y_pred, average='binary'):.4f}  (maximize)")
+    accuracy = accuracy_score(y_true, y_pred)
+    precision = precision_score(y_true, y_pred, average='binary')
+    recall = recall_score(y_true, y_pred, average='binary')
+    f1 = f1_score(y_true, y_pred, average='binary')
+    print(f"Accuracy  : {accuracy:.4f}  (maximize)")
+    print(f"Precision : {precision:.4f}  (maximize)")
+    print(f"Recall    : {recall:.4f}  (maximize)")
+    print(f"F1 Score  : {f1:.4f}  (maximize)")
     print()
     print(classification_report(y_true, y_pred))
 
@@ -80,7 +93,10 @@ def show_classification_report(y_true, y_pred):
     plt.tight_layout()
     plt.show()
 
-def show_clustering_report(X, labels):
+    return ClassificationMetrics(accuracy, precision, recall, f1, roc_auc)
+
+
+def show_clustering_report(X, points, labels):
     """
     Shows clustering report with a histogram of cluster sizes and a scatter plot of the clusters.
 
@@ -130,12 +146,12 @@ def show_clustering_report(X, labels):
 
         if label == -1:
             ax_scatter.scatter(
-                X[mask, 0], X[mask, 1],
+                points[mask, 0], points[mask, 1],
                 s=25, c="black", marker="x", label="Noise"
             )
         else:
             ax_scatter.scatter(
-                X[mask, 0], X[mask, 1],
+                points[mask, 0], points[mask, 1],
                 s=25, label=f"Cluster {label}", edgecolors='k', linewidth=0.3
             )
 
@@ -144,6 +160,37 @@ def show_clustering_report(X, labels):
     ax_scatter.set_ylabel("Y")
     ax_scatter.grid(True)
     ax_scatter.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
+
+    plt.tight_layout()
+    plt.show()
+
+
+def plot_feature_importances(model, feature_names, top_n=None):
+    """
+    Plot sorted feature importances of a fitted model.
+    
+    :param model: fitted RandomForestClassifier or RandomForestRegressor
+    :param feature_names: list of feature names
+    :param top_n: number of top features to show (all if None)
+    :param figsize: size of the figure
+    :param title: plot title
+    """
+    importances = model.feature_importances_
+    indices = np.argsort(importances)  # descending order
+
+    if top_n is not None:
+        indices = indices[:top_n]
+
+    plt.figure(figsize=(10, 6))
+    plt.barh(range(len(indices)), importances[indices], color='skyblue', edgecolor='black')
+    plt.yticks(range(len(indices)), [feature_names[i] for i in indices])
+    plt.xlabel("Importance")
+    plt.title("Feature Importances")
+
+    # Add numeric values to the bars
+    for i, idx in enumerate(indices):
+        plt.text(importances[idx] + 0.01*importances.max(), i, f"{importances[idx]:.3f}", 
+                 va='center', fontsize=9)
 
     plt.tight_layout()
     plt.show()
@@ -169,7 +216,18 @@ def test_show_clustering_report():
     ])
     y_pred = np.array([0, 0, 0, 0, 1, 1, 2, 2, 2, -1])  # -1 indicates noise
     show_clustering_report(X, y_pred)
-    
+
+
+def test_plot_feature_importances():
+    data = load_iris()
+    X = data.data
+    y = data.target
+    feature_names = data.feature_names
+
+    model = DecisionTreeClassifier(random_state=42)
+    model.fit(X, y)
+
+    plot_feature_importances(model, feature_names, top_n=4)    
 
 if __name__ == "__main__":
-    test_show_classification_report()
+    test_plot_feature_importances()
