@@ -1,0 +1,242 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.25)  29 DEC 2025 16:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./random_forest.tex
+(random_forest.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+(F:\Software\Tools\Latex\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(F:\Software\Tools\Latex\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\c@figure=\count281
+\c@table=\count282
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(F:\Software\Tools\Latex\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(F:\Software\Tools\Latex\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(F:\Software\Tools\Latex\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(F:\Software\Tools\Latex\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(F:\Software\Tools\Latex\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(F:\Software\Tools\Latex\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(F:\Software\Tools\Latex\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count283
+\float@exts=\toks18
+\float@box=\box53
+\@float@everytoks=\toks19
+\@floatcapt=\box54
+)
+(F:\Software\Tools\Latex\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count284
+)
+(F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\random_forest.aux)
+\openout1 = `random_forest.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+(F:\Software\Tools\Latex\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count285
+\scratchdimen=\dimen151
+\scratchbox=\box55
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen152
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks21
+) (F:\Software\Tools\Latex\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(F:\Software\Tools\Latex\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Overfull \hbox (7.88937pt too wide) in paragraph at lines 11--12
+\OT1/cmr/m/n/10 d^^Secision con-stru-its sur des sous-^^Sechantillons al^^Seato
+ires des donn^^Sees, et en agr^^Segeant
+ []
+
+
+Overfull \hbox (5.31955pt too wide) in paragraph at lines 38--39
+\OT1/cmr/bx/n/10 nal En-cod-ing \OT1/cmr/m/n/10 pour ne pas in-tro-duire beau-c
+oup de nou-velle car-act^^Seristiques
+ []
+
+[1
+
+{C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+<../images/random_forest/original.png, id=10, 859.2903pt x 354.123pt>
+File: ../images/random_forest/original.png Graphic file (type png)
+<use ../images/random_forest/original.png>
+Package pdftex.def Info: ../images/random_forest/original.png  used on input li
+ne 47.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+<../images/random_forest/random_under_sampling.png, id=12, 859.2903pt x 354.123
+pt>
+File: ../images/random_forest/random_under_sampling.png Graphic file (type png)
+
+<use ../images/random_forest/random_under_sampling.png>
+Package pdftex.def Info: ../images/random_forest/random_under_sampling.png  use
+d on input line 53.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+<../images/random_forest/random_over_sampling.png, id=13, 859.2903pt x 354.123p
+t>
+File: ../images/random_forest/random_over_sampling.png Graphic file (type png)
+<use ../images/random_forest/random_over_sampling.png>
+Package pdftex.def Info: ../images/random_forest/random_over_sampling.png  used
+ on input line 60.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+<../images/random_forest/smote_over_sampling.png, id=14, 859.2903pt x 354.123pt
+>
+File: ../images/random_forest/smote_over_sampling.png Graphic file (type png)
+<use ../images/random_forest/smote_over_sampling.png>
+Package pdftex.def Info: ../images/random_forest/smote_over_sampling.png  used 
+on input line 67.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+<../images/random_forest/tomek_under_sampling.png, id=15, 859.2903pt x 354.123p
+t>
+File: ../images/random_forest/tomek_under_sampling.png Graphic file (type png)
+<use ../images/random_forest/tomek_under_sampling.png>
+Package pdftex.def Info: ../images/random_forest/tomek_under_sampling.png  used
+ on input line 74.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+ [2 <../images/random_forest/original.png> <../images/random_forest/random_unde
+r_sampling.png>] [3 <../images/random_forest/random_over_sampling.png> <../imag
+es/random_forest/smote_over_sampling.png> <../images/random_forest/tomek_under_
+sampling.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 86.
+
+Overfull \hbox (3.86253pt too wide) in paragraph at lines 88--89
+[]\OT1/cmr/bx/n/10 max[]depth, min[]samples[]split, min[]samples[]leaf : \OT1/c
+mr/m/n/10 les memes valeurs
+ []
+
+<../images/random_forest/feature_importance.png, id=27, 714.7503pt x 426.393pt>
+
+File: ../images/random_forest/feature_importance.png Graphic file (type png)
+<use ../images/random_forest/feature_importance.png>
+Package pdftex.def Info: ../images/random_forest/feature_importance.png  used o
+n input line 96.
+(pdftex.def)             Requested size: 345.0pt x 205.81792pt.
+
+LaTeX Warning: Reference `tab:random_forest-paramter-tuning-comparison' on page
+ 4 undefined on input line 99.
+
+
+LaTeX Warning: Reference `tab:random_forest-paramter-tuning-comparison' on page
+ 4 undefined on input line 103.
+
+
+Overfull \hbox (36.17711pt too wide) in paragraph at lines 111--119
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (33.99391pt too wide) in paragraph at lines 125--133
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<../images/random_forest/final_no_pca.png, id=28, 859.2903pt x 354.123pt>
+File: ../images/random_forest/final_no_pca.png Graphic file (type png)
+<use ../images/random_forest/final_no_pca.png>
+Package pdftex.def Info: ../images/random_forest/final_no_pca.png  used on inpu
+t line 139.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+<../images/random_forest/final_with_pca.png, id=29, 859.2903pt x 354.123pt>
+File: ../images/random_forest/final_with_pca.png Graphic file (type png)
+<use ../images/random_forest/final_with_pca.png>
+Package pdftex.def Info: ../images/random_forest/final_with_pca.png  used on in
+put line 141.
+(pdftex.def)             Requested size: 345.0pt x 142.17622pt.
+[4] [5 <../images/random_forest/feature_importance.png>] [6 <../images/random_f
+orest/final_no_pca.png> <../images/random_forest/final_with_pca.png>] [7]
+(F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\random_forest.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-11-06>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1432 strings out of 467871
+ 25399 string characters out of 5428485
+ 446736 words of memory out of 5000000
+ 30349 multiletter control sequences out of 15000+600000
+ 629137 words of font info for 45 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,9n,65p,851b,310s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm100
+0.pk><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><F:/Sof
+tware/Tools/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><F:/Software/Tools/
+Latex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><F:/Software/Tools/Latex/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><F:/Software/Tools/Latex/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on "F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\ra
+ndom_forest.pdf" (7 pages, 389459 bytes).
+PDF statistics:
+ 73 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,138 @@
+% \documentclass{article}
+% \usepackage{graphicx}
+% \usepackage{float}
+
+% \begin{document}
+
+
+\subsection{Decision Tree}
+
+\subsubsection{Definition}
+\textbf{Decision Tree} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en divisant récursivement l'espace des caractéristiques en sous-ensembles basés sur des conditions de seuil sur les caractéristiques, formant ainsi une structure arborescente où chaque nœud interne représente une condition de décision et chaque feuille représente une prédiction de classe ou de valeur.
+
+Les critères couramment utilisés pour mesurer la qualité des divisions incluent l'indice de Gini, le gain d'information (entropie) et la réduction de la variance.
+
+Les paramètres clés de l'algorithme Decision Tree incluent :
+\begin{itemize}
+    \item \textbf{Max Depth :} La profondeur maximale de l'arbre, généralement utilisé pour contrôler la complexité de l'arbre et éviter le surapprentissage.
+    \item \textbf{Min Samples Split :} Le nombre minimum d'échantillons requis pour diviser un nœud, généralement fixé à la valeur minimale de 2.
+    \item \textbf{Min Samples Leaf :} Le nombre minimum d'échantillons requis pour être à une feuille, généralement fixé à la valeur minimale de 1.
+    \item \textbf{Criterion :} La fonction utilisée pour mesurer la qualité des divisions (par exemple, Gini, Entropie).
+\end{itemize}
+
+\subsubsection{Implemenation from scratch}
+Voici notre implémentation de l'algorithme Decision Tree en Python.
+
+\begin{verbatim}
+Implemenation Decision Tree from scratch
+\end{verbatim}
+
+
+\subsection{Normalization et Encodage de données}
+Decision Tree n'est pas basé sur la distance entre les points de données, donc la normalisation des caractéristiques n'est pas nécessaire dans ce cas. Cepandant, l'encodage des caractéristiques catégorielles est important pour permettre à l'algorithme de traiter correctement ces données. Les techniques que nous avons utilisées sont : 
+\begin{itemize}
+    \item Pour l'encodage des caractéristiques categorilaes, nous avons utilisé \textbf{Ordinal Encoding} pour ne pas introduire beaucoup de nouvelle caractéristiques ainsi que pour preserver un order entre les valeurs pour permettre à l'algorithme de mieux séparer les données.
+\end{itemize}
+
+\subsection{Balancement de données}
+L'algorithme de Decision Tree est sensible à la distribution des classes dans les données comme KNN, nous avons donc fait la meme exploration de différentes techniques de balancement pour équilibrer les classes, nous avons utilisé un model avec \textbf{criterion='gini'} et le reste des paramètres pas defaut, et le pour la comparaison des resultats nous avons utilisé le métrique \textbf{ROC AUC}. Les techniques de balancement que nous avons testées sont :
+\begin{itemize}
+    \item \textbf{Original Data :}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{decision_tree/original.png}
+        \caption{Decision Tree avec données originales}
+    \end{figure}
+    \item \textbf{Random Under Sampling :} 
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{decision_tree/random_under_sampling.png}
+        \caption{Decision Tree avec données random under sampling}
+    \end{figure}
+
+    \item \textbf{Ranodom Over Sampling :} 
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{decision_tree/random_over_sampling.png}
+        \caption{Decision Tree avec données random over sampling}
+    \end{figure}
+    
+    \item \textbf{Smote Over Sampling :}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{decision_tree/smote_over_sampling.png}
+        \caption{Decision Tree avec données smote over sampling}
+    \end{figure}
+    
+    \item \textbf{Tomek Under Sampling :} 
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\textwidth]{decision_tree/tomek_under_sampling.png}
+        \caption{Decision Tree avec données tomek under sampling}
+    \end{figure}
+\end{itemize}
+À la fin la meilleure technique de balancement pour Decision Tree est \textbf{Random Over Sampling} avec les resultats suivants :
+\begin{itemize}
+    \item Best sampling method: Random Over-Sampling with ROC AUC: 0.9725
+    \item New dataset sizes: Train=67819, Test=16955, Full=84774
+    \item Class distribution: class 0: 33893, class 1: 33926
+\end{itemize}
+
+\subsection{Réglage des paramètres}
+Pour le réglage des paramètres de l'algorithme Decision Tree, nous avons utilisé la validation croisée (k-folds avec $k=5$) avec une recherche d'optimisation bayésienne de 50 itérations, la plage des paramètres testés est la suivante :
+\begin{itemize}
+    \item \textbf{max\_depth :} [1, 50] la profondeur maximale de l'arbre
+    \item \textbf{min\_samples\_split :} [2, 50] le nombre minimum d'échantillons requis pour diviser un nœud interne
+    \item \textbf{min\_samples\_leaf :} [1, 50] le nombre minimum d'échantillons requis pour être à une feuille
+    \item \textbf{max\_features :} [None, "sqrt", "log2"] le nombre de caractéristiques à considérer lors de la recherche de la meilleure division, None signifie que toutes les caractéristiques sont utilisées
+    \item \textbf{criterion :} ["gini", "entropy"] la fonction pour mesurer la qualité d'une division
+\end{itemize}
+Les meilleurs paramètres trouvés sont sont illustrés dans Table~\ref{tab:decision_tree-paramter-tuning-comparison}.
+On remarque que tous les paramètres sont à leurs valeurs minimales sauf max depth qui est limité à 39 pour éviter le surapprentissage.
+
+\subsection{Réduction de dimensionnalité}
+Decision Tree peut être affecté par la malédiction de la dimensionnalité comm KNN, nous avons donc appliqué une réduction de dimensionnalité en utilisant l'analyse en composantes principales (PCA) pour réduire le nombre de caractéristiques tout en conservant $90$\% de la variance des données. Après l'application de PCA, le nombre de caractéristiques est passé de 38 à 1. Nous avons ensuite répété le processus de réglage des paramètres avec les mêmes plages de valeurs. Les meilleurs paramètres trouvés après la réduction de dimensionnalité sont exactement les mêmes que ceux trouvés avant la réduction de dimensionnalité et sont illustrés dans Table~\ref{tab:decision_tree-parameter-tuning-comparison}.
+
+\subsection{Comparaison de resultats}
+Les resultats finaux obtenus avec KNN après le réglage des paramètres et l'utilisation de la technique de balancement Random Over Sampling sont les suivants :
+
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Configuration} & \textbf{Criterion} & \textbf{Max Depth} & \textbf{Min Samples Split} & \textbf{Min Samples Leaf} & \textbf{Max Features} \\
+\hline
+Sans réduction de dimensionnalité & gini & 39 & 2 & 1 & None \\
+Avec réduction de dimensionnalité & gini & 50 & 2 & 1 & log2 \\
+\hline
+\end{tabular}
+\caption{Comparaison des performances avec et sans réduction de dimensionnalité}
+\label{tab:decision_tree-parameter-tunig-comparaison}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Configuration} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\
+\hline
+Sans réduction de dimensionnalité & 0.9706 & 0.9528 & 0.9902 & 0.9711 \\
+Avec réduction de dimensionnalité & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
+\hline
+\end{tabular}
+\caption{Comparaison des performances avec et sans réduction de dimensionnalité}
+\label{tab:decision_tree-dim-reduction-comparison}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{decision_tree/final_no_pca.png}
+    \caption{Decision Tree - Final Results with no PCA}
+    \includegraphics[width=1\textwidth]{decision_tree/final_with_pca.png}
+    \caption{Decision Tree - Final Results with PCA}
+\end{figure}
+
+Nous observons que la réduction de dimensionnalité n'a pas eu un impact significatif sur les performances de l'algorithme Decision Tree dans ce cas, mais elle a permis de réduire significativement le temps de calcul et les ressources nécessaires pour l'entraînement et la prédiction du modèle en réduisant tous les caractéristiques du dataset en une seule composante.
+
+% \end{document}

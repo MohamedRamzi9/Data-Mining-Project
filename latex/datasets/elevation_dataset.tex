@@ -1,0 +1,66 @@
+\subsection{Elevation}
+\subsection*{Defintion}
+Le dataset d’élévation \textbf{be15\_grd} est constitué d’un seul raster, où la valeur de chaque pixel représente l’élévation à cet emplacement.
+
+Ce raster est structuré sous la forme d’un dossier contenant plusieurs fichiers \textbf{.adf}, qui composent ensemble un raster au format ESRI Grid couvrant toute la carte du monde.
+
+Pour convertir les coordonnées d’un pixel en longitude et latitude, nous  utilisons les systèmes de référence définis par la norme EPSG, notamment l’EPSG:4326 (WGS84), qui décrit la manière standard de représenter les coordonnées géographiques sur la Terre en longitude et latitude.
+
+\subsection*{Chargement des données}
+ Nous utilisons les bibliothèques suivantes pour charger et manipuler les datasets de l'élevation :
+ \begin{itemize}
+    \item \textbf{rioxarray :} pour ouvrir et manipuler les fichiers raster.
+    \item \textbf{geopandas :} pour ouvrir les fichiers de forme des pays et extraire les contours, ainsi que pour sélectionner les zones correspondant à l’Algérie et à la Tunisie.
+    \item \textbf{matplotlib :} pour la visualisation des graphes d’analyse.
+ \end{itemize}
+Ainsi, comme pour le dataset du sol, nous obtenons au final une liste des valeurs d’élévation pour chaque point en Algérie et en Tunisie.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{elevation/map.png}
+    \caption{Carte de l'élévation de l'Algérie et la Tunisie}
+    \label{fig:elevation-map}
+\end{figure}
+
+\subsection*{Prétraitement de analyse de données}
+Comme il n y a pas de données manquante ou abberantes, nous passons directement au prétraitement et analyse :
+
+\begin{itemize}
+    \item \textbf{Analyse univaiée :} calcul des statestiques descriptives pour l'attribue de l'élévation.
+    
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{l r}
+        \hline
+        \textbf{Statistique} & \textbf{Valeur} \\
+        \hline
+        Count & 13\,183\,993 \\
+        Mean  & 536.37 \\
+        Std   & 325.48 \\
+        Min   & -872 \\
+        25\%  & 310 \\
+        50\%  & 463 \\
+        75\%  & 697 \\
+        Max   & 2877 \\
+        \hline
+        \end{tabular}
+        \caption{Statistiques descriptives des valeurs d’élévation.}
+    \end{table}
+
+    \item \textbf{Distribution de données :} visualisation de la distribution des valeurs de l'élévation  à l’aide d’histogrammes et de boites à moustache.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{elevation/histogram.png}
+        \caption{Histogramme des valeurs d'élévation}
+        \label{fig:elevation-histograms}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\linewidth]{elevation/boxplot.png}
+        \caption{Boite à moustache des valeurs d'élévation}
+        \label{fig:elevation-boxplots}
+    \end{figure}
+
+
+\end{itemize}

@@ -1,0 +1,45 @@
+\babel@toc {french}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces valeurs manquantes.}}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Boxplot.}}{3}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Description de l'image.}}{4}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces boxplot}}{6}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces q-q plots}}{7}{figure.caption.18}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces scatter plot}}{7}{figure.caption.19}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces distribution de log\_area }}{8}{figure.caption.20}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces distribution de gridcode}}{8}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces distribution de lcccode }}{8}{figure.caption.22}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces matrice de correlation}}{9}{figure.caption.23}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Nombres de valeurs manquante avant et aprés le netoyage.}}{11}{figure.caption.27}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Histogramme des valeurs numériques}}{12}{figure.caption.30}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Boite à moustache des valeurs numériques}}{13}{figure.caption.31}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Matrice de corrélation}}{14}{figure.caption.32}%
+\contentsline {figure}{\numberline {1.15}{\ignorespaces Carte de l'élévation de l'Algérie et la Tunisie}}{15}{figure.caption.35}%
+\contentsline {figure}{\numberline {1.16}{\ignorespaces Histogramme des valeurs d'élévation}}{16}{figure.caption.38}%
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Boite à moustache des valeurs d'élévation}}{17}{figure.caption.39}%
+\contentsline {figure}{\numberline {1.18}{\ignorespaces boxplot.}}{19}{figure.caption.45}%
+\contentsline {figure}{\numberline {1.19}{\ignorespaces matrice de correlation.}}{20}{figure.caption.46}%
+\contentsline {figure}{\numberline {1.20}{\ignorespaces dataset fire apres sampling.}}{24}{figure.caption.54}%
+\contentsline {figure}{\numberline {1.21}{\ignorespaces KNN avec données originales}}{28}{figure.caption.67}%
+\contentsline {figure}{\numberline {1.22}{\ignorespaces KNN avec données random under sampling}}{28}{figure.caption.68}%
+\contentsline {figure}{\numberline {1.23}{\ignorespaces KNN avec données random over sampling}}{29}{figure.caption.69}%
+\contentsline {figure}{\numberline {1.24}{\ignorespaces KNN avec données smote over sampling}}{29}{figure.caption.70}%
+\contentsline {figure}{\numberline {1.25}{\ignorespaces KNN avec données tomek under sampling}}{30}{figure.caption.71}%
+\contentsline {figure}{\numberline {1.26}{\ignorespaces KNN - Final Results with no PCA}}{31}{figure.caption.76}%
+\contentsline {figure}{\numberline {1.27}{\ignorespaces KNN - Final Results with PCA}}{31}{figure.caption.76}%
+\contentsline {figure}{\numberline {1.28}{\ignorespaces Decision Tree avec données originales}}{33}{figure.caption.79}%
+\contentsline {figure}{\numberline {1.29}{\ignorespaces Decision Tree avec données random under sampling}}{33}{figure.caption.80}%
+\contentsline {figure}{\numberline {1.30}{\ignorespaces Decision Tree avec données random over sampling}}{34}{figure.caption.81}%
+\contentsline {figure}{\numberline {1.31}{\ignorespaces Decision Tree avec données smote over sampling}}{34}{figure.caption.82}%
+\contentsline {figure}{\numberline {1.32}{\ignorespaces Decision Tree avec données tomek under sampling}}{34}{figure.caption.83}%
+\contentsline {figure}{\numberline {1.33}{\ignorespaces Decision Tree - Final Results with no PCA}}{36}{figure.caption.86}%
+\contentsline {figure}{\numberline {1.34}{\ignorespaces Decision Tree - Final Results with PCA}}{36}{figure.caption.86}%
+\contentsline {figure}{\numberline {1.35}{\ignorespaces Random Forest avec données originales}}{38}{figure.caption.89}%
+\contentsline {figure}{\numberline {1.36}{\ignorespaces Random Forest avec données random under sampling}}{38}{figure.caption.90}%
+\contentsline {figure}{\numberline {1.37}{\ignorespaces Random Forest avec données random over sampling}}{39}{figure.caption.91}%
+\contentsline {figure}{\numberline {1.38}{\ignorespaces Random Forest avec données smote over sampling}}{39}{figure.caption.92}%
+\contentsline {figure}{\numberline {1.39}{\ignorespaces Random Forest avec données tomek under sampling}}{40}{figure.caption.93}%
+\contentsline {figure}{\numberline {1.40}{\ignorespaces Random Forest - Feature Importance}}{41}{figure.caption.94}%
+\contentsline {figure}{\numberline {1.41}{\ignorespaces Random Forest - Final Results with no PCA}}{42}{figure.caption.97}%
+\contentsline {figure}{\numberline {1.42}{\ignorespaces Random Forest - Final Results with PCA}}{42}{figure.caption.97}%
+\addvspace {10\p@ }

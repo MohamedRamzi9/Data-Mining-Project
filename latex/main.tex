@@ -1,0 +1,102 @@
+\documentclass[a4paper, 12pt, oneside]{report}
+
+% ------------------------------------------------------
+% Packages essentiels
+% ------------------------------------------------------
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2cm]{geometry}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+
+% ------------------------------------------------------
+% Packages utiles
+% ------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{{../images/}} % chemin des images
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{subcaption} % préfère à subfig
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage[linesnumbered,ruled,vlined,french]{algorithm2e}
+\usepackage{pdfpages}
+
+% ------------------------------------------------------
+% Configuration des en-têtes et pieds de page
+% ------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{} % on vide les en-têtes par défaut
+\fancyfoot[C]{\thepage} % numéro de page centré
+
+% Style pour la page de garde, TOC et listes
+\fancypagestyle{frontmatter}{
+    \fancyhead{} 
+    \fancyfoot[C]{\thepage}
+}
+
+% ------------------------------------------------------
+\begin{document}
+% ------------------------------------------------------
+
+% Page de garde
+\input{page_de_garde.tex}
+
+% ------------------------------------------------------
+% Table des matières et listes
+% ------------------------------------------------------
+\newpage
+\pagestyle{frontmatter}
+\pagenumbering{roman} % numérotation romaine pour la préface
+
+% Table des matières
+\addcontentsline{toc}{chapter}{Table des matières}
+\tableofcontents
+
+% Liste des figures
+\newpage
+\addcontentsline{toc}{chapter}{Liste des figures}
+\listoffigures
+
+% Liste des tableaux
+\newpage
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\listoftables
+
+% ------------------------------------------------------
+% Début du rapport
+% ------------------------------------------------------
+\newpage
+\pagenumbering{arabic} % numérotation arabe pour le corps du rapport
+\pagestyle{fancy} % style normal pour les chapitres
+
+% Introduction
+\input{introduction.tex}
+
+\newpage
+
+% Chapitres
+\input{chapter1.tex}
+\input{commun_definitions}
+\input{chapter2.tex}
+% \input{chapter3.tex}
+\input{conclusion.tex}
+
+% ------------------------------------------------------
+% Bibliographie
+% ------------------------------------------------------
+\nocite{*}
+\bibliographystyle{unsrt}
+\bibliography{sample}
+
+% ------------------------------------------------------
+\end{document}
