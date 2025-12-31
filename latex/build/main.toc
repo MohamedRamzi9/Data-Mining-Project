@@ -1,0 +1,50 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Table des matières}{i}{Doc-Start}%
+\contentsline {chapter}{Liste des figures}{ii}{chapter*.1}%
+\contentsline {chapter}{Liste des tableaux}{iv}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {subsection}{\numberline {1.0.1}fire dataset}{2}{subsection.1.0.1}%
+\contentsline {subsection}{\numberline {1.0.2}Land Cover}{5}{subsection.1.0.2}%
+\contentsline {subsection}{\numberline {1.0.3}Soil}{10}{subsection.1.0.3}%
+\contentsline {subsection}{\numberline {1.0.4}Elevation}{15}{subsection.1.0.4}%
+\contentsline {subsection}{\numberline {1.0.5}Climat}{18}{subsection.1.0.5}%
+\contentsline {subsection}{\numberline {1.0.6}Fusionnement des datasets}{21}{subsection.1.0.6}%
+\contentsline {subsection}{\numberline {1.0.7}Sampling}{23}{subsection.1.0.7}%
+\contentsline {subsection}{\numberline {1.0.8}Definition Communes}{25}{subsection.1.0.8}%
+\contentsline {subsubsection}{Distance Euclidienne}{25}{section*.55}%
+\contentsline {subsubsection}{Distance de Manhattan}{25}{section*.56}%
+\contentsline {subsubsection}{Distance de Minkowski}{25}{section*.57}%
+\contentsline {subsubsection}{Standarisation}{25}{section*.58}%
+\contentsline {subsubsection}{Dummy Encoding}{25}{section*.59}%
+\contentsline {subsubsection}{Ordinal Encoding}{26}{section*.60}%
+\contentsline {subsubsection}{F1 Macro}{26}{section*.61}%
+\contentsline {subsubsection}{ROC AUC}{26}{section*.62}%
+\contentsline {subsubsection}{L'entropie}{26}{section*.63}%
+\contentsline {subsubsection}{Indice de Gini}{26}{section*.64}%
+\contentsline {subsection}{\numberline {1.0.9}Knn}{27}{subsection.1.0.9}%
+\contentsline {subsubsection}{Definition}{27}{section*.65}%
+\contentsline {subsubsection}{Implemenation from scratch}{27}{section*.66}%
+\contentsline {subsection}{\numberline {1.0.10}Normalization et Encodage de données}{27}{subsection.1.0.10}%
+\contentsline {subsection}{\numberline {1.0.11}Balancement de données}{28}{subsection.1.0.11}%
+\contentsline {subsection}{\numberline {1.0.12}Réglage des paramètres}{30}{subsection.1.0.12}%
+\contentsline {subsection}{\numberline {1.0.13}Réduction de dimensionnalité}{30}{subsection.1.0.13}%
+\contentsline {subsection}{\numberline {1.0.14}Comparaison de resultats}{30}{subsection.1.0.14}%
+\contentsline {subsubsection}{Réglage de paramèteres}{31}{section*.72}%
+\contentsline {subsubsection}{Résultats finaux}{31}{section*.74}%
+\contentsline {subsection}{\numberline {1.0.15}Decision Tree}{32}{subsection.1.0.15}%
+\contentsline {subsubsection}{Definition}{32}{section*.77}%
+\contentsline {subsubsection}{Implemenation from scratch}{32}{section*.78}%
+\contentsline {subsection}{\numberline {1.0.16}Normalization et Encodage de données}{32}{subsection.1.0.16}%
+\contentsline {subsection}{\numberline {1.0.17}Balancement de données}{32}{subsection.1.0.17}%
+\contentsline {subsection}{\numberline {1.0.18}Réglage des paramètres}{33}{subsection.1.0.18}%
+\contentsline {subsection}{\numberline {1.0.19}Réduction de dimensionnalité}{35}{subsection.1.0.19}%
+\contentsline {subsection}{\numberline {1.0.20}Comparaison de resultats}{35}{subsection.1.0.20}%
+\contentsline {subsection}{\numberline {1.0.21}Random Forest}{37}{subsection.1.0.21}%
+\contentsline {subsubsection}{Definition}{37}{section*.87}%
+\contentsline {subsubsection}{Implemenation from scratch}{37}{section*.88}%
+\contentsline {subsection}{\numberline {1.0.22}Normalization et Encodage de données}{37}{subsection.1.0.22}%
+\contentsline {subsection}{\numberline {1.0.23}Balancement de données}{37}{subsection.1.0.23}%
+\contentsline {subsection}{\numberline {1.0.24}Réglage des paramètres}{40}{subsection.1.0.24}%
+\contentsline {subsection}{\numberline {1.0.25}Réduction de dimensionnalité}{41}{subsection.1.0.25}%
+\contentsline {subsection}{\numberline {1.0.26}Comparaison de resultats}{41}{subsection.1.0.26}%
+\contentsline {chapter}{\numberline {2}Conclusion}{43}{chapter.2}%

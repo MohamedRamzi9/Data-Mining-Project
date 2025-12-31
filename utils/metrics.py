@@ -187,11 +187,6 @@ def plot_feature_importances(model, feature_names, top_n=None):
     plt.xlabel("Importance")
     plt.title("Feature Importances")
 
-    # Add numeric values to the bars
-    for i, idx in enumerate(indices):
-        plt.text(importances[idx] + 0.01*importances.max(), i, f"{importances[idx]:.3f}", 
-                 va='center', fontsize=9)
-
     plt.tight_layout()
     plt.show()
 

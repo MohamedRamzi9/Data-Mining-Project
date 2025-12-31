@@ -1,0 +1,70 @@
+\subsection{fire dataset}
+\subsection*{Defintiton}
+Le dataset utilisé regroupe les événements d’incendies détectés en 2024 pour l’Algérie et la Tunisie, issus du service FIRMS de la NASA. Il est basé sur les observations du capteur VIIRS embarqué sur le satellite NOAA‑20 et comprend l’ensemble des points de feu enregistrés au cours de l’année 2024 dans ces deux pays. Chaque enregistrement comporte des coordonnées géographiques (longitude/latitude) ainsi que des informations associées à l’occurrence d’un feu détecté par satellite.
+\subsection*{chargement des données }
+Nous avons d’abord chargé le CSV brut contenant toutes les colonnes (longitude, latitude, type de feu, bright\_ti4, satellite, etc.).
+Ensuite, nous avons importé le shapefile des frontières et filtré les polygones afin de ne conserver que ceux correspondant à l’Algérie et à la Tunisie.
+\begin{itemize}
+    \item \textbf{Pandas } : lecture des fichiers CSV bet rechargement du dataset nettoyé au format Parquet 
+    \item \textbf{GeoPandas } : lecture du shapefile mondial , filtrage pour l’Algérie et la Tunisie
+    \item \textbf{SciPy } : recherche spatiale optimisée pour associer rapidement chaque point de feu à la cellule de grille la plus proche.
+    \item \textbf{NumPy } : création d’une grille régulière de coordonnées lon/lat (résolution 0.01°) et manipulation des matrices 2D/1D.
+    \item \textbf{Shapely } : gestion des géométries vectorielles via GeoPandas pour créer automatiquement les points.
+\end{itemize}
+\subsection*{Nettoyage des données }
+\begin{itemize}
+    \item \textbf{Suppression des colonnes inutiles} : satellite, instrument, version, scan, track (métadonnées non pertinentes pour la modélisation).
+    \item \textbf{Renommage des colonnes} : longitude → \texttt{lon}, latitude → \texttt{lat}, type → \texttt{fire}.
+    \item \textbf{Sélection des colonnes essentielles} : conservation uniquement de \texttt{lon}, \texttt{lat} et \texttt{fire}; suppression des autres variables (bright\_ti4, confidence, etc.).
+    \item \textbf{Filtrage des événements de feu} : conservation des feux réels (\texttt{fire == 0}), suppression des autres classes (1, 2, 3); conversion de la classe 0 en 1 pour indiquer la présence de feu.
+    \item \textbf{Suppression des valeurs manquantes} : élimination des lignes contenant des NaN.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{fire/valeurs_manquantes.png}
+    \caption{valeurs manquantes.}
+    \label{fig:une_image}
+\end{figure}
+
+
+\subsection*{Pretraitement et analyse des donnees}
+\begin{itemize}
+    \item \textbf{Création d'une grille régulière (échantillonnage spatial)} :
+        \begin{itemize}
+            \item Résolution : 0.01° (~1,1 km à l'équateur)
+            \item Génération des coordonnées longitude/latitude avec \texttt{np.arange()} et \texttt{np.meshgrid()}
+            \item Application d'un buffer spatial pour couvrir entièrement la zone d'étude
+        \end{itemize}
+    \item \textbf{Découpage spatial (clipping)} :
+        \begin{itemize}
+            \item Conversion de la grille en GeoDataFrame (points)
+            \item Clipping avec \texttt{gpd.clip()} pour ne conserver que les cellules à l'intérieur des frontières d'Algérie et de Tunisie
+            \item Réduction significative du nombre de cellules (grille complète → grille clippée)
+        \end{itemize}
+    \item \textbf{Labélisation des cellules (Fire vs No-Fire)}
+        \begin{itemize}
+            \item Construction d'un index spatial (\texttt{cKDTree}) sur les points de feu.
+            \item Requête spatiale avec une tolérance égale à la moitié de la résolution de la grille (0.005°).
+            \item Attribution des labels :
+        \begin{itemize}
+            \item Cellules situées à moins de 0.005° d'un feu → \texttt{fire = 1}
+            \item Cellules sans feu dans le rayon → \texttt{fire = 0}
+        \end{itemize}
+        \end{itemize}
+    \item Analyse univariée : calcul de la moyenne et autres statistiques descriptives pour chaque variable.
+    \item Analyse bivariée : étude des relations entre variables et calcul de la corrélation.
+\end{itemize}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{fire/box.png}
+    \caption{Boxplot.}
+    \label{fig:une_image}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{fire/matrice.png}
+    \caption{Description de l'image.}
+    \label{fig:une_image}
+\end{figure}
+
