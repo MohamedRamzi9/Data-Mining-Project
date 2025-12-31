@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.25)  30 DEC 2025 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.25)  31 DEC 2025 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -126,6 +126,43 @@ Package babel Info: Making ? an active character on input line 276.
 \FBfnindent=\dimen166
 )))
 (F:\Software\Tools\Latex\tex/latex/carlisle\scalefnt.sty)
+(F:\Software\Tools\Latex\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(F:\Software\Tools\Latex\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(F:\Software\Tools\Latex\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen167
+\captionmargin=\dimen168
+\caption@leftmargin=\dimen169
+\caption@rightmargin=\dimen170
+\caption@width=\dimen171
+\caption@indent=\dimen172
+\caption@parindent=\dimen173
+\caption@hangindent=\dimen174
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count298
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count299
+)
+(F:\Software\Tools\Latex\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box53
+\extrarowheight=\dimen176
+\NC@list=\toks22
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box54
+)
 (F:\Software\Tools\Latex\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -143,8 +180,8 @@ Package graphics Info: Driver file: pdftex.def on input line 106.
 (F:\Software\Tools\Latex\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen167
-\Gin@req@width=\dimen168
+\Gin@req@height=\dimen177
+\Gin@req@width=\dimen178
 )
 (F:\Software\Tools\Latex\tex/latex/epstopdf-pkg\epstopdf.sty
 Package: epstopdf 2020-01-24 v2.11 Conversion with epstopdf on the fly (HO)
@@ -188,59 +225,21 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )))
 (F:\Software\Tools\Latex\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count296
-\float@exts=\toks22
-\float@box=\box53
-\@float@everytoks=\toks23
-\@floatcapt=\box54
+\c@float@type=\count300
+\float@exts=\toks23
+\float@box=\box55
+\@float@everytoks=\toks24
+\@floatcapt=\box56
 )
 (F:\Software\Tools\Latex\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-
-(F:\Software\Tools\Latex\tex/latex/tools\array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen169
-\ar@mcellbox=\box55
-\extrarowheight=\dimen170
-\NC@list=\toks24
-\extratabsurround=\skip51
-\backup@length=\skip52
-\ar@cellbox=\box56
-)
-\TX@col@width=\dimen171
-\TX@old@table=\dimen172
-\TX@old@col=\dimen173
-\TX@target=\dimen174
-\TX@delta=\dimen175
-\TX@cols=\count297
+\TX@col@width=\dimen179
+\TX@old@table=\dimen180
+\TX@old@col=\dimen181
+\TX@target=\dimen182
+\TX@delta=\dimen183
+\TX@cols=\count301
 \TX@ftn=\toks25
-)
-(F:\Software\Tools\Latex\tex/latex/caption\caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(F:\Software\Tools\Latex\tex/latex/caption\caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen176
-\captionmargin=\dimen177
-\caption@leftmargin=\dimen178
-\caption@rightmargin=\dimen179
-\caption@width=\dimen180
-\caption@indent=\dimen181
-\caption@parindent=\dimen182
-\caption@hangindent=\dimen183
-Package caption Info: Standard document class detected.
-Package caption Info: french babel package is loaded.
-)
-\c@caption@flags=\count298
-\c@continuedfloat=\count299
-Package caption Info: float package is loaded.
-)
-(F:\Software\Tools\Latex\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count300
-Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count301
 )
 (F:\Software\Tools\Latex\tex/latex/siunitx\siunitx.sty
 Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
@@ -906,24 +905,24 @@ LaTeX Warning: Label `fig:une_image' multiply defined.
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -959,7 +958,16 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 48.
+LaTeX Info: Redefining \degres on input line 49.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(F:\Software\Tools\Latex\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
+
 (F:\Software\Tools\Latex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count379
@@ -974,22 +982,14 @@ LaTeX Info: Redefining \degres on input line 48.
 \makeMPintoPDFobject=\count384
 \everyMPtoPDFconversion=\toks49
 )
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: longtable package is loaded.
- (F:\Software\Tools\Latex\tex/latex/caption\ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)
-Package caption Info: End \AtBeginDocument code.
-
 (F:\Software\Tools\Latex\tex/latex/translations/dicts\translations-basic-dictio
 nary-french.trsl
 File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 48.
-Package hyperref Info: Link coloring OFF on input line 48.
+or `french'. on input line 49.
+Package hyperref Info: Link coloring OFF on input line 49.
 
 (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.out)
 (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.out)
@@ -1050,19 +1050,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--71
 
 [1
 
-] (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.lof
-[2
-
-])
+] (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [3] (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.lot)
+
+[2
+
+] (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
 
-[4
+[3
 
 ] (introduction.tex
 Chapitre 1.
@@ -1071,7 +1071,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \newpage
+l.86 \newpage
               [1
 
 ] (chapter1.tex
@@ -1082,7 +1082,7 @@ l.85 \newpage
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 1.
 
-<../images/fire/valeurs_manquantes.png, id=295, 570.933pt x 281.853pt>
+<../images/fire/valeurs_manquantes.png, id=276, 570.933pt x 281.853pt>
 File: ../images/fire/valeurs_manquantes.png Graphic file (type png)
 <use ../images/fire/valeurs_manquantes.png>
 Package pdftex.def Info: ../images/fire/valeurs_manquantes.png  used on input l
@@ -1097,12 +1097,12 @@ tt/m/n/12 np.arange() \T1/cmr/m/n/12 et \T1/cmtt/m/n/12 np.meshgrid()
 [2
 
 ]
-<../images/fire/box.png, id=308, 1149.093pt x 592.614pt>
+<../images/fire/box.png, id=288, 1149.093pt x 592.614pt>
 File: ../images/fire/box.png Graphic file (type png)
 <use ../images/fire/box.png>
 Package pdftex.def Info: ../images/fire/box.png  used on input line 60.
 (pdftex.def)             Requested size: 328.6279pt x 169.48451pt.
-<../images/fire/matrice.png, id=309, 474.0912pt x 426.393pt>
+<../images/fire/matrice.png, id=289, 474.0912pt x 426.393pt>
 File: ../images/fire/matrice.png Graphic file (type png)
 <use ../images/fire/matrice.png>
 Package pdftex.def Info: ../images/fire/matrice.png  used on input line 66.
@@ -1116,44 +1116,44 @@ Package pdftex.def Info: ../images/fire/matrice.png  used on input line 66.
 
 
 ]
-<../images/land_cover_dataset/boxplot.png, id=330, 714.7503pt x 372.1905pt>
+<../images/land_cover_dataset/boxplot.png, id=311, 714.7503pt x 372.1905pt>
 File: ../images/land_cover_dataset/boxplot.png Graphic file (type png)
 <use ../images/land_cover_dataset/boxplot.png>
 Package pdftex.def Info: ../images/land_cover_dataset/boxplot.png  used on inpu
 t line 80.
 (pdftex.def)             Requested size: 375.57782pt x 195.579pt.
-<../images/land_cover_dataset/q-q.png, id=331, 714.7503pt x 298.4751pt>
+<../images/land_cover_dataset/q-q.png, id=312, 714.7503pt x 298.4751pt>
 File: ../images/land_cover_dataset/q-q.png Graphic file (type png)
 <use ../images/land_cover_dataset/q-q.png>
 Package pdftex.def Info: ../images/land_cover_dataset/q-q.png  used on input li
 ne 86.
 (pdftex.def)             Requested size: 375.57782pt x 156.84296pt.
-<../images/land_cover_dataset/sactter plots.png, id=332, 353.4003pt x 372.1905p
+<../images/land_cover_dataset/sactter plots.png, id=313, 353.4003pt x 372.1905p
 t>
 File: ../images/land_cover_dataset/sactter plots.png Graphic file (type png)
 <use ../images/land_cover_dataset/sactter plots.png>
 Package pdftex.def Info: ../images/land_cover_dataset/sactter plots.png  used o
 n input line 92.
 (pdftex.def)             Requested size: 375.57782pt x 395.5707pt.
-<../images/land_cover_dataset/area.png, id=333, 714.7503pt x 354.123pt>
+<../images/land_cover_dataset/area.png, id=314, 714.7503pt x 354.123pt>
 File: ../images/land_cover_dataset/area.png Graphic file (type png)
 <use ../images/land_cover_dataset/area.png>
 Package pdftex.def Info: ../images/land_cover_dataset/area.png  used on input l
 ine 98.
 (pdftex.def)             Requested size: 375.57782pt x 186.08485pt.
-<../images/land_cover_dataset/gridcode.png, id=334, 714.7503pt x 354.123pt>
+<../images/land_cover_dataset/gridcode.png, id=315, 714.7503pt x 354.123pt>
 File: ../images/land_cover_dataset/gridcode.png Graphic file (type png)
 <use ../images/land_cover_dataset/gridcode.png>
 Package pdftex.def Info: ../images/land_cover_dataset/gridcode.png  used on inp
 ut line 104.
 (pdftex.def)             Requested size: 375.57782pt x 186.08485pt.
-<../images/land_cover_dataset/lcccode.png, id=335, 714.7503pt x 354.123pt>
+<../images/land_cover_dataset/lcccode.png, id=316, 714.7503pt x 354.123pt>
 File: ../images/land_cover_dataset/lcccode.png Graphic file (type png)
 <use ../images/land_cover_dataset/lcccode.png>
 Package pdftex.def Info: ../images/land_cover_dataset/lcccode.png  used on inpu
 t line 110.
 (pdftex.def)             Requested size: 375.57782pt x 186.08485pt.
-<../images/land_cover_dataset/matrice.png, id=336, 616.4631pt x 570.2103pt>
+<../images/land_cover_dataset/matrice.png, id=317, 616.4631pt x 570.2103pt>
 File: ../images/land_cover_dataset/matrice.png Graphic file (type png)
 <use ../images/land_cover_dataset/matrice.png>
 Package pdftex.def Info: ../images/land_cover_dataset/matrice.png  used on inpu
@@ -1168,13 +1168,13 @@ s/land_cover_dataset/lcccode.png>] [9 <../images/land_cover_dataset/matrice.png
 
 
 (datasets/soil_dataset.tex
-<../images/soil/missing-values-before.png, id=361, 570.2103pt x 281.853pt>
+<../images/soil/missing-values-before.png, id=342, 570.2103pt x 281.853pt>
 File: ../images/soil/missing-values-before.png Graphic file (type png)
 <use ../images/soil/missing-values-before.png>
 Package pdftex.def Info: ../images/soil/missing-values-before.png  used on inpu
 t line 50.
 (pdftex.def)             Requested size: 375.57782pt x 185.65369pt.
-<../images/soil/missing-values-after.png, id=362, 570.2103pt x 281.853pt>
+<../images/soil/missing-values-after.png, id=343, 570.2103pt x 281.853pt>
 File: ../images/soil/missing-values-after.png Graphic file (type png)
 <use ../images/soil/missing-values-after.png>
 Package pdftex.def Info: ../images/soil/missing-values-after.png  used on input
@@ -1185,13 +1185,13 @@ Package pdftex.def Info: ../images/soil/missing-values-after.png  used on input
 
 
 ]
-<../images/soil/histograms.png, id=370, 1148.3703pt x 1772.0604pt>
+<../images/soil/histograms.png, id=351, 1148.3703pt x 1772.0604pt>
 File: ../images/soil/histograms.png Graphic file (type png)
 <use ../images/soil/histograms.png>
 Package pdftex.def Info: ../images/soil/histograms.png  used on input line 100.
 
 (pdftex.def)             Requested size: 469.47049pt x 724.4404pt.
-<../images/soil/boxplots.png, id=371, 1149.093pt x 1772.0604pt>
+<../images/soil/boxplots.png, id=352, 1149.093pt x 1772.0604pt>
 File: ../images/soil/boxplots.png Graphic file (type png)
 <use ../images/soil/boxplots.png>
 Package pdftex.def Info: ../images/soil/boxplots.png  used on input line 106.
@@ -1206,7 +1206,7 @@ Overfull \vbox (45.69763pt too high) has occurred while \output is active []
 
 
 [13 <../images/soil/boxplots.png>]
-<../images/soil/correlation-matrix.png, id=389, 793.5246pt x 725.5908pt>
+<../images/soil/correlation-matrix.png, id=370, 793.5246pt x 725.5908pt>
 File: ../images/soil/correlation-matrix.png Graphic file (type png)
 <use ../images/soil/correlation-matrix.png>
 Package pdftex.def Info: ../images/soil/correlation-matrix.png  used on input l
@@ -1216,7 +1216,7 @@ ine 117.
 \openout2 = `datasets/elevation_dataset.aux'.
 
  (datasets/elevation_dataset.tex
-<../images/elevation/map.png, id=396, 487.0998pt x 395.3169pt>
+<../images/elevation/map.png, id=376, 487.0998pt x 395.3169pt>
 File: ../images/elevation/map.png Graphic file (type png)
 <use ../images/elevation/map.png>
 Package pdftex.def Info: ../images/elevation/map.png  used on input line 20.
@@ -1226,13 +1226,13 @@ Package pdftex.def Info: ../images/elevation/map.png  used on input line 20.
 
 
  <../images/elevation/map.png>]
-<../images/elevation/histogram.png, id=404, 615.0177pt x 395.3169pt>
+<../images/elevation/histogram.png, id=385, 615.0177pt x 395.3169pt>
 File: ../images/elevation/histogram.png Graphic file (type png)
 <use ../images/elevation/histogram.png>
 Package pdftex.def Info: ../images/elevation/histogram.png  used on input line 
 54.
 (pdftex.def)             Requested size: 469.47049pt x 301.76497pt.
-<../images/elevation/boxplot.png, id=405, 591.1686pt x 284.0211pt>
+<../images/elevation/boxplot.png, id=386, 591.1686pt x 284.0211pt>
 File: ../images/elevation/boxplot.png Graphic file (type png)
 <use ../images/elevation/boxplot.png>
 Package pdftex.def Info: ../images/elevation/boxplot.png  used on input line 60
@@ -1248,12 +1248,12 @@ Package pdftex.def Info: ../images/elevation/boxplot.png  used on input line 60
 
 
 ]
-<../images/climat/boxplot.png, id=426, 1148.3703pt x 354.123pt>
+<../images/climat/boxplot.png, id=407, 1148.3703pt x 354.123pt>
 File: ../images/climat/boxplot.png Graphic file (type png)
 <use ../images/climat/boxplot.png>
 Package pdftex.def Info: ../images/climat/boxplot.png  used on input line 57.
 (pdftex.def)             Requested size: 422.52057pt x 130.29398pt.
-<../images/climat/matrice.png, id=427, 485.6544pt x 426.393pt>
+<../images/climat/matrice.png, id=408, 485.6544pt x 426.393pt>
 File: ../images/climat/matrice.png Graphic file (type png)
 <use ../images/climat/matrice.png>
 Package pdftex.def Info: ../images/climat/matrice.png  used on input line 63.
@@ -1269,7 +1269,7 @@ Package pdftex.def Info: ../images/climat/matrice.png  used on input line 63.
 \openout2 = `datasets/sampling.aux'.
 
  (datasets/sampling.tex
-<../images/fire/sampling.png, id=451, 1151.9838pt x 1144.0341pt>
+<../images/fire/sampling.png, id=432, 1151.9838pt x 1144.0341pt>
 File: ../images/fire/sampling.png Graphic file (type png)
 <use ../images/fire/sampling.png>
 Package pdftex.def Info: ../images/fire/sampling.png  used on input line 26.
@@ -1283,198 +1283,195 @@ Package pdftex.def Info: ../images/fire/sampling.png  used on input line 26.
 
 
 ] [26])
-(chapter2.tex (supervised_learning/knn.tex [27]
-<../images/knn/original.png, id=497, 859.2903pt x 354.123pt>
+(chapter2.tex (supervised_learning/knn.tex
+<../images/knn/original.png, id=471, 859.2903pt x 354.123pt>
 File: ../images/knn/original.png Graphic file (type png)
 <use ../images/knn/original.png>
-Package pdftex.def Info: ../images/knn/original.png  used on input line 47.
+Package pdftex.def Info: ../images/knn/original.png  used on input line 48.
 (pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/knn/random_under_sampling.png, id=498, 859.2903pt x 354.123pt>
+ [27]
+<../images/knn/random_under_sampling.png, id=478, 859.2903pt x 354.123pt>
 File: ../images/knn/random_under_sampling.png Graphic file (type png)
 <use ../images/knn/random_under_sampling.png>
 Package pdftex.def Info: ../images/knn/random_under_sampling.png  used on input
- line 54.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/knn/random_over_sampling.png, id=499, 859.2903pt x 354.123pt>
+ line 57.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/knn/random_over_sampling.png, id=479, 859.2903pt x 354.123pt>
 File: ../images/knn/random_over_sampling.png Graphic file (type png)
 <use ../images/knn/random_over_sampling.png>
 Package pdftex.def Info: ../images/knn/random_over_sampling.png  used on input 
-line 61.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [28 <../images/knn/original.png> <../images/knn/random_under_sampling.png>]
-<../images/knn/smote_over_sampling.png, id=506, 859.2903pt x 354.123pt>
+line 63.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/knn/smote_over_sampling.png, id=480, 859.2903pt x 354.123pt>
 File: ../images/knn/smote_over_sampling.png Graphic file (type png)
 <use ../images/knn/smote_over_sampling.png>
 Package pdftex.def Info: ../images/knn/smote_over_sampling.png  used on input l
-ine 68.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/knn/tomek_under_sampling.png, id=507, 859.2903pt x 354.123pt>
+ine 71.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/knn/tomek_under_sampling.png, id=481, 859.2903pt x 354.123pt>
 File: ../images/knn/tomek_under_sampling.png Graphic file (type png)
 <use ../images/knn/tomek_under_sampling.png>
 Package pdftex.def Info: ../images/knn/tomek_under_sampling.png  used on input 
-line 75.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [29 <../images/knn/random_over_sampling.png> <../images/knn/smote_over_samplin
-g.png>] [30 <../images/knn/tomek_under_sampling.png>]
-<../images/knn/final_no_pca.png, id=521, 859.2903pt x 354.123pt>
+line 77.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+ [28 <../images/knn/original.png> <../images/knn/random_under_sampling.png> <..
+/images/knn/random_over_sampling.png> <../images/knn/smote_over_sampling.png> <
+../images/knn/tomek_under_sampling.png>]
+<../images/knn/final_no_pca.png, id=495, 859.2903pt x 354.123pt>
 File: ../images/knn/final_no_pca.png Graphic file (type png)
 <use ../images/knn/final_no_pca.png>
-Package pdftex.def Info: ../images/knn/final_no_pca.png  used on input line 137
+Package pdftex.def Info: ../images/knn/final_no_pca.png  used on input line 146
 .
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/knn/final_with_pca.png, id=522, 859.2903pt x 354.123pt>
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/knn/final_with_pca.png, id=496, 859.2903pt x 354.123pt>
 File: ../images/knn/final_with_pca.png Graphic file (type png)
 <use ../images/knn/final_with_pca.png>
 Package pdftex.def Info: ../images/knn/final_with_pca.png  used on input line 1
-39.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [31 <../images/knn/final_no_pca.png> <../images/knn/final_with_pca.png>]) (sup
-ervised_learning/decision_tree.tex
-<../images/decision_tree/original.png, id=531, 859.2903pt x 354.123pt>
+52.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+ [29]) (supervised_learning/decision_tree.tex
+<../images/decision_tree/original.png, id=505, 859.2903pt x 354.123pt>
 File: ../images/decision_tree/original.png Graphic file (type png)
 <use ../images/decision_tree/original.png>
 Package pdftex.def Info: ../images/decision_tree/original.png  used on input li
-ne 43.
+ne 44.
 (pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [32]
-<../images/decision_tree/random_under_sampling.png, id=539, 859.2903pt x 354.12
+<../images/decision_tree/random_under_sampling.png, id=506, 859.2903pt x 354.12
 3pt>
 File: ../images/decision_tree/random_under_sampling.png Graphic file (type png)
 
 <use ../images/decision_tree/random_under_sampling.png>
 Package pdftex.def Info: ../images/decision_tree/random_under_sampling.png  use
-d on input line 49.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/decision_tree/random_over_sampling.png, id=540, 859.2903pt x 354.123
+d on input line 52.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/decision_tree/random_over_sampling.png, id=507, 859.2903pt x 354.123
 pt>
 File: ../images/decision_tree/random_over_sampling.png Graphic file (type png)
 <use ../images/decision_tree/random_over_sampling.png>
 Package pdftex.def Info: ../images/decision_tree/random_over_sampling.png  used
- on input line 56.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/decision_tree/smote_over_sampling.png, id=541, 859.2903pt x 354.123p
+ on input line 58.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/decision_tree/smote_over_sampling.png, id=508, 859.2903pt x 354.123p
 t>
 File: ../images/decision_tree/smote_over_sampling.png Graphic file (type png)
 <use ../images/decision_tree/smote_over_sampling.png>
 Package pdftex.def Info: ../images/decision_tree/smote_over_sampling.png  used 
-on input line 63.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/decision_tree/tomek_under_sampling.png, id=542, 859.2903pt x 354.123
+on input line 66.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/decision_tree/tomek_under_sampling.png, id=509, 859.2903pt x 354.123
 pt>
 File: ../images/decision_tree/tomek_under_sampling.png Graphic file (type png)
 <use ../images/decision_tree/tomek_under_sampling.png>
 Package pdftex.def Info: ../images/decision_tree/tomek_under_sampling.png  used
- on input line 70.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [33 <../images/decision_tree/original.png> <../images/decision_tree/random_und
-er_sampling.png>]
-[34 <../images/decision_tree/random_over_sampling.png> <../images/decision_tree
-/smote_over_sampling.png> <../images/decision_tree/tomek_under_sampling.png>]
+ on input line 72.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+ [30 <../images/knn/final_no_pca.png> <../images/knn/final_with_pca.png>] [31 <
+../images/decision_tree/original.png> <../images/decision_tree/random_under_sam
+pling.png> <../images/decision_tree/random_over_sampling.png> <../images/decisi
+on_tree/smote_over_sampling.png> <../images/decision_tree/tomek_under_sampling.
+png>]
 
 LaTeX Warning: Reference `tab:decision_tree-paramter-tuning-comparison' on page
- 35 undefined on input line 90.
+ 32 undefined on input line 96.
 
 
 LaTeX Warning: Reference `tab:decision_tree-parameter-tuning-comparison' on pag
-e 35 undefined on input line 94.
+e 32 undefined on input line 100.
 
 
-Overfull \hbox (199.82437pt too wide) in paragraph at lines 102--110
+Overfull \hbox (33.37381pt too wide) in paragraph at lines 108--126
  [][] 
  []
 
-<../images/decision_tree/final_no_pca.png, id=556, 859.2903pt x 354.123pt>
+<../images/decision_tree/final_no_pca.png, id=529, 859.2903pt x 354.123pt>
 File: ../images/decision_tree/final_no_pca.png Graphic file (type png)
 <use ../images/decision_tree/final_no_pca.png>
 Package pdftex.def Info: ../images/decision_tree/final_no_pca.png  used on inpu
-t line 130.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/decision_tree/final_with_pca.png, id=557, 859.2903pt x 354.123pt>
+t line 149.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/decision_tree/final_with_pca.png, id=530, 859.2903pt x 354.123pt>
 File: ../images/decision_tree/final_with_pca.png Graphic file (type png)
 <use ../images/decision_tree/final_with_pca.png>
 Package pdftex.def Info: ../images/decision_tree/final_with_pca.png  used on in
-put line 132.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-) (supervised_learning/random_forest.tex [35] [36 <../images/decision_tree/fina
-l_no_pca.png> <../images/decision_tree/final_with_pca.png>]
-<../images/random_forest/original.png, id=568, 859.2903pt x 354.123pt>
+put line 155.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+[32]) (supervised_learning/random_forest.tex
+<../images/random_forest/original.png, id=537, 859.2903pt x 354.123pt>
 File: ../images/random_forest/original.png Graphic file (type png)
 <use ../images/random_forest/original.png>
 Package pdftex.def Info: ../images/random_forest/original.png  used on input li
-ne 47.
+ne 48.
 (pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [37]
-<../images/random_forest/random_under_sampling.png, id=575, 859.2903pt x 354.12
+<../images/random_forest/random_under_sampling.png, id=538, 859.2903pt x 354.12
 3pt>
 File: ../images/random_forest/random_under_sampling.png Graphic file (type png)
 
 <use ../images/random_forest/random_under_sampling.png>
 Package pdftex.def Info: ../images/random_forest/random_under_sampling.png  use
-d on input line 53.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/random_forest/random_over_sampling.png, id=576, 859.2903pt x 354.123
+d on input line 56.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/random_forest/random_over_sampling.png, id=539, 859.2903pt x 354.123
 pt>
 File: ../images/random_forest/random_over_sampling.png Graphic file (type png)
 <use ../images/random_forest/random_over_sampling.png>
 Package pdftex.def Info: ../images/random_forest/random_over_sampling.png  used
- on input line 60.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [38 <../images/random_forest/original.png> <../images/random_forest/random_und
-er_sampling.png>]
-<../images/random_forest/smote_over_sampling.png, id=584, 859.2903pt x 354.123p
+ on input line 62.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/random_forest/smote_over_sampling.png, id=540, 859.2903pt x 354.123p
 t>
 File: ../images/random_forest/smote_over_sampling.png Graphic file (type png)
 <use ../images/random_forest/smote_over_sampling.png>
 Package pdftex.def Info: ../images/random_forest/smote_over_sampling.png  used 
-on input line 67.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/random_forest/tomek_under_sampling.png, id=585, 859.2903pt x 354.123
+on input line 70.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/random_forest/tomek_under_sampling.png, id=541, 859.2903pt x 354.123
 pt>
 File: ../images/random_forest/tomek_under_sampling.png Graphic file (type png)
 <use ../images/random_forest/tomek_under_sampling.png>
 Package pdftex.def Info: ../images/random_forest/tomek_under_sampling.png  used
- on input line 74.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
- [39 <../images/random_forest/random_over_sampling.png> <../images/random_fores
-t/smote_over_sampling.png>]
-<../images/random_forest/feature_importance.png, id=592, 714.7503pt x 426.393pt
+ on input line 76.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+ [33 <../images/decision_tree/final_no_pca.png> <../images/decision_tree/final_
+with_pca.png>] [34 <../images/random_forest/original.png> <../images/random_for
+est/random_under_sampling.png> <../images/random_forest/random_over_sampling.pn
+g> <../images/random_forest/smote_over_sampling.png> <../images/random_forest/t
+omek_under_sampling.png>]
+<../images/random_forest/feature_importance.png, id=561, 714.7503pt x 426.393pt
 >
 File: ../images/random_forest/feature_importance.png Graphic file (type png)
 <use ../images/random_forest/feature_importance.png>
 Package pdftex.def Info: ../images/random_forest/feature_importance.png  used o
-n input line 96.
+n input line 102.
 (pdftex.def)             Requested size: 469.47049pt x 280.07996pt.
- [40 <../images/random_forest/tomek_under_sampling.png>]
-
-LaTeX Warning: Reference `tab:random_forest-paramter-tuning-comparison' on page
- 41 undefined on input line 99.
 
 
 LaTeX Warning: Reference `tab:random_forest-paramter-tuning-comparison' on page
- 41 undefined on input line 103.
+ 35 undefined on input line 105.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: Reference `tab:random_forest-paramter-tuning-comparison' on page
+ 35 undefined on input line 109.
 
-<../images/random_forest/final_no_pca.png, id=598, 859.2903pt x 354.123pt>
+[35 <../images/random_forest/feature_importance.png>]
+<../images/random_forest/final_no_pca.png, id=568, 859.2903pt x 354.123pt>
 File: ../images/random_forest/final_no_pca.png Graphic file (type png)
 <use ../images/random_forest/final_no_pca.png>
 Package pdftex.def Info: ../images/random_forest/final_no_pca.png  used on inpu
-t line 139.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-<../images/random_forest/final_with_pca.png, id=599, 859.2903pt x 354.123pt>
+t line 148.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+<../images/random_forest/final_with_pca.png, id=569, 859.2903pt x 354.123pt>
 File: ../images/random_forest/final_with_pca.png Graphic file (type png)
 <use ../images/random_forest/final_with_pca.png>
 Package pdftex.def Info: ../images/random_forest/final_with_pca.png  used on in
-put line 141.
-(pdftex.def)             Requested size: 469.47049pt x 193.4714pt.
-[41 <../images/random_forest/feature_importance.png>])) (conclusion.tex
-[42 <../images/random_forest/final_no_pca.png> <../images/random_forest/final_w
+put line 154.
+(pdftex.def)             Requested size: 225.34383pt x 92.8641pt.
+)) (conclusion.tex
+[36 <../images/random_forest/final_no_pca.png> <../images/random_forest/final_w
 ith_pca.png>]
 Chapitre 2.
 )
 No file main.bbl.
-[43
+[37
 
 ] (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\main.aux
 (F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\datasets/fire.aux)
@@ -1503,36 +1500,89 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 259648FE862BD21B57821EAA71B78341;5134.
  ) 
 Here is how much of TeX's memory you used:
- 31213 strings out of 467871
- 637755 string characters out of 5428485
- 1003986 words of memory out of 5000000
- 59387 multiletter control sequences out of 15000+600000
- 642394 words of font info for 68 fonts, out of 8000000 for 9000
+ 31233 strings out of 467871
+ 638398 string characters out of 5428485
+ 1003989 words of memory out of 5000000
+ 59411 multiletter control sequences out of 15000+600000
+ 643163 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,94p,905b,1300s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti120
-0.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc
-1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-ctt1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecbx1728.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx2488.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecrm2074.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecbx2074.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm1200.pk><F:/Software/Tools/Latex/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><F
-:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Software/To
-ols/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Software/Tools/Latex/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><F:/Software/Tools/Latex/fonts/type1/publi
-c/amsfonts/cm/cmr8.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb>
+ 84i,17n,94p,905b,1211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{table.caption.87} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.86} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.79} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.78} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.72} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.70} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.88} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.84} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.83} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.77} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.76} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.68} has been referenced but does not
+ exist, replaced by a fixed one
+
+ <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.
+pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti12
+00.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecc
+c1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+ectt1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi6
+00\tcrm1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\ecbx1728.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
+c/dpi600\ecbx2488.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecbx1440.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
+ppen/ec/dpi600\ecrm2074.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecbx2074.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfou
+r/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/lj
+four/jknappen/ec/dpi600\ecrm1200.pk><F:/Software/Tools/Latex/fonts/type1/public
+/amsfonts/cm/cmex10.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Software/T
+ools/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Software/Tools/Latex/fo
+nts/type1/public/amsfonts/cm/cmr6.pfb><F:/Software/Tools/Latex/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><F:/Software/Tools/Latex/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb>
 Output written on "F:\Documents\M2 SII\S1\Data Mining\TP\Project\latex\build\ma
-in.pdf" (48 pages, 3664491 bytes).
+in.pdf" (41 pages, 3668727 bytes).
 PDF statistics:
- 1075 PDF objects out of 1200 (max. 8388607)
- 173 named destinations out of 1000 (max. 500000)
+ 1083 PDF objects out of 1200 (max. 8388607)
+ 167 named destinations out of 1000 (max. 500000)
  481 words of extra memory for PDF output out of 10000 (max. 10000000)
 
