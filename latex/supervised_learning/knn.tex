@@ -7,17 +7,18 @@
 
 \subsection{Knn}
 
-\subsubsection{Definition}
-\textbf{KNN} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en trouvant les 'k' points de données les plus proches dans l'espace des caractéristiques et en utilisant ces points pour prédire la classe ou la valeur de la nouvelle donnée.
+% \subsubsection{Definition}
+% \textbf{KNN} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en trouvant les 'k' points de données les plus proches dans l'espace des caractéristiques et en utilisant ces points pour prédire la classe ou la valeur de la nouvelle donnée.
 
-Les distances couramment utilisées pour mesurer la proximité entre les points de données incluent la distance euclidienne, la distance de Manhattan et la distance de Minkowski.
+% Les distances couramment utilisées pour mesurer la proximité entre les points de données incluent la distance euclidienne, la distance de Manhattan et la distance de Minkowski.
 
-Les paramètres clés de l'algorithme KNN incluent :
-\begin{itemize}
-    \item \textbf{K :} Le nombre de voisins à considérer pour la prédiction.
-    \item \textbf{Distance Metric :} La méthode utilisée pour calculer la distance entre les points de données.
-    \item \textbf{Weighting :} La manière dont les voisins sont pondérés lors de la prise de décision (par exemple, pondération uniforme ou pondération par distance).
-\end{itemize}
+% Les paramètres clés de l'algorithme KNN incluent :
+% \begin{itemize}
+%     \item \textbf{K :} Le nombre de voisins à considérer pour la prédiction.
+%     \item \textbf{Distance Metric :} La méthode utilisée pour calculer la distance entre les points de données.
+%     \item \textbf{Weighting :} La manière dont les voisins sont pondérés lors de la prise de décision (par exemple, pondération uniforme ou pondération par distance).
+% \end{itemize}
+
 
 \subsubsection{Implemenation from scratch}
 Voici notre implémentation de l'algorithme KNN en Python avec ces petites modifications :
@@ -44,37 +45,42 @@ Comme \textbf{KNN} est sensible à la distribution des classes dans les données
     \item \textbf{Original Data :} Utilisation des données telles quelles, sans modification. Les resultats obtenus sont comme suit : 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{../images/knn/original.png}
+        \includegraphics[width=1\textwidth]{knn/original.png}
         \caption{KNN avec données originales}
     \end{figure}
 
-    \item \textbf{Random Under Sampling :} Sous échantillonnage aléatoire des données majoritaires pour équilibrer les classes. Les resultats obtenus sont comme suit : 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{../images/knn/random_under_sampling.png}
-        \caption{KNN avec données random under sampling}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{knn/random_under_sampling.png}
+            \caption{KNN avec données Random Under Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{knn/random_over_sampling.png}
+            \caption{KNN avec données Random Over Sampling}
+        \end{subfigure}
+
+        \vspace{0.5cm}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{knn/smote_over_sampling.png}
+            \caption{KNN avec données SMOTE Over Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{knn/tomek_under_sampling.png}
+            \caption{KNN avec données Tomek Under Sampling}
+        \end{subfigure}
+
+        \caption{Comparaison des performances du KNN avec différentes techniques de rééchantillonnage}
     \end{figure}
 
-    \item \textbf{Ranodom Over Sampling :} Sur échantillonnage aléatoire des données minoritaires pour équilibrer les classes. Les resultats obtenus sont comme suit : 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{../images/knn/random_over_sampling.png}
-        \caption{KNN avec données random over sampling}
-    \end{figure}
-    
-    \item \textbf{Smote Over Sampling :} Sur échantillonnage synthétique des données minoritaires pour équilibrer les classes. Les resultats obtenus sont comme suit : 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{../images/knn/smote_over_sampling.png}
-        \caption{KNN avec données smote over sampling}
-    \end{figure}
-    
-    \item \textbf{Tomek Under Sampling :} Sous échantillonnage des données majoritaires en éliminant les exemples proches des frontières de décision. Les resultats obtenus sont comme suit : 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{../images/knn/tomek_under_sampling.png}
-        \caption{KNN avec données tomek under sampling}
-    \end{figure}
 \end{itemize}
 À la fin la meilleure technique de balancement pour KNN est \textbf{Random Over Sampling} avec les resultats suivants :
 \begin{itemize}
@@ -108,8 +114,8 @@ Les resultats finaux obtenus avec KNN après le réglage des paramètres et l'ut
 \hline
 \textbf{Configuration} & \textbf{n\_neighbors} & \textbf{weights} & \textbf{metric} \\
 \hline
-Sans réduction de dimensionnalité & 1 & uniform & Manhattan \\
-Avec réduction de dimensionnalité & 1 & uniform & Manhattan \\
+Sans PCA & 1 & uniform & Manhattan \\
+Avec PCA & 1 & uniform & Manhattan \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
@@ -124,8 +130,8 @@ Avec réduction de dimensionnalité & 1 & uniform & Manhattan \\
 \hline
 \textbf{Configuration} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\
 \hline
-Sans réduction de dimensionnalité & 0.9706 & 0.9528 & 0.9902 & 0.9711 \\
-Avec réduction de dimensionnalité & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
+Sans PCA & 0.9706 & 0.9528 & 0.9902 & 0.9711 \\
+Avec PCA & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
@@ -134,11 +140,22 @@ Avec réduction de dimensionnalité & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{../images/knn/final_no_pca.png}
-    \caption{KNN - Final Results with no PCA}
-    \includegraphics[width=1\textwidth]{../images/knn/final_with_pca.png}
-    \caption{KNN - Final Results with PCA}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{knn/final_no_pca.png}
+        \caption{KNN - Résultats finaux sans PCA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{knn/final_with_pca.png}
+        \caption{KNN - Résultats finaux avec PCA}
+    \end{subfigure}
+
+    \caption{Comparaison des performances finales du KNN avec et sans réduction de dimensionnalité (PCA)}
 \end{figure}
+
 
 Nous observons que la réduction de dimensionnalité n'a pas eu un impact significatif sur les performances de l'algorithme KNN dans ce cas, mais elle a permis de réduire significativement le temps de calcul et les ressources nécessaires pour l'entraînement et la prédiction du modèle.
 

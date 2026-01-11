@@ -7,22 +7,23 @@
 
 \subsection{Random Forest}
 
-\subsubsection{Definition}
-\textbf{Random Forest} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en combinant plusieurs arbres de décision construits sur des sous-échantillons aléatoires des données, et en agrégeant leurs prédictions pour améliorer la précision et réduire le surapprentissage. Chaque arbre de décision est construit en sélectionnant aléatoirement un sous-ensemble des caractéristiques à chaque nœud, ce qui introduit de la diversité parmi les arbres et améliore la robustesse du modèle global.
+% \subsubsection{Definition}
+% \textbf{Random Forest} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en combinant plusieurs arbres de décision construits sur des sous-échantillons aléatoires des données, et en agrégeant leurs prédictions pour améliorer la précision et réduire le surapprentissage. Chaque arbre de décision est construit en sélectionnant aléatoirement un sous-ensemble des caractéristiques à chaque nœud, ce qui introduit de la diversité parmi les arbres et améliore la robustesse du modèle global.
 
-Les critères utilisés pour mesurer la qualité des divisions incluent sans les meme que celle d'arbre de decision comme Gini, le gain d'information (entropie) et la réduction de la variance.
+% Les critères utilisés pour mesurer la qualité des divisions incluent sans les meme que celle d'arbre de decision comme Gini, le gain d'information (entropie) et la réduction de la variance.
 
-Les paramètres clés de l'algorithme Random Forest incluent :
-\begin{itemize}
-    \item tous les paramètres de l'arbre de décision, tels que :
-    \begin{itemize}
-        \item \textbf{Max Depth :} La profondeur maximale de l'arbre, généralement utilisé pour contrôler la complexité de l'arbre et éviter le surapprentissage.
-        \item \textbf{Min Samples Split :} Le nombre minimum d'échantillons requis pour diviser un nœud, généralement fixé à la valeur minimale de 2.
-        \item \textbf{Min Samples Leaf :} Le nombre minimum d'échantillons requis pour être à une feuille, généralement fixé à la valeur minimale de 1.
-        \item \textbf{Criterion :} La fonction utilisée pour mesurer la qualité des divisions (par exemple, Gini, Entropie).
-    \end{itemize}
-    \item \textbf{N Estimators :} Le nombre d'arbres dans la forêt, varie selon le dataset.
-\end{itemize}
+% Les paramètres clés de l'algorithme Random Forest incluent :
+% \begin{itemize}
+%     \item tous les paramètres de l'arbre de décision, tels que :
+%     \begin{itemize}
+%         \item \textbf{Max Depth :} La profondeur maximale de l'arbre, généralement utilisé pour contrôler la complexité de l'arbre et éviter le surapprentissage.
+%         \item \textbf{Min Samples Split :} Le nombre minimum d'échantillons requis pour diviser un nœud, généralement fixé à la valeur minimale de 2.
+%         \item \textbf{Min Samples Leaf :} Le nombre minimum d'échantillons requis pour être à une feuille, généralement fixé à la valeur minimale de 1.
+%         \item \textbf{Criterion :} La fonction utilisée pour mesurer la qualité des divisions (par exemple, Gini, Entropie).
+%     \end{itemize}
+%     \item \textbf{N Estimators :} Le nombre d'arbres dans la forêt, varie selon le dataset.
+% \end{itemize}
+
 
 \subsubsection{Implemenation from scratch}
 Voici notre implémentation de l'algorithme Random Forest en Python.
@@ -47,33 +48,38 @@ Pour le balancement de classes comme avec les arbres de décision, nous avons ut
         \includegraphics[width=1\textwidth]{random_forest/original.png}
         \caption{Random Forest avec données originales}
     \end{figure}
-    \item \textbf{Random Under Sampling :} 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{random_forest/random_under_sampling.png}
-        \caption{Random Forest avec données random under sampling}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{random_forest/random_under_sampling.png}
+            \caption{Random Forest avec données Random Under Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{random_forest/random_over_sampling.png}
+            \caption{Random Forest avec données Random Over Sampling}
+        \end{subfigure}
+
+        \vspace{0.5cm}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{random_forest/smote_over_sampling.png}
+            \caption{Random Forest avec données SMOTE Over Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{random_forest/tomek_under_sampling.png}
+            \caption{Random Forest avec données Tomek Under Sampling}
+        \end{subfigure}
+
+        \caption{Comparaison des performances du Random Forest avec différentes techniques de rééchantillonnage}
     \end{figure}
 
-    \item \textbf{Ranodom Over Sampling :} 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{random_forest/random_over_sampling.png}
-        \caption{Random Forest avec données random over sampling}
-    \end{figure}
-    
-    \item \textbf{Smote Over Sampling :}
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{random_forest/smote_over_sampling.png}
-        \caption{Random Forest avec données smote over sampling}
-    \end{figure}
-    
-    \item \textbf{Tomek Under Sampling :} 
-    \begin{figure}[H]
-        \centering
-        \includegraphics[width=1\textwidth]{random_forest/tomek_under_sampling.png}
-        \caption{Random Forest avec données tomek under sampling}
-    \end{figure}
 \end{itemize}
 À la fin la meilleure technique de balancement pour Random Forest est \textbf{Random Over Sampling} avec les resultats suivants :
 \begin{itemize}
@@ -91,7 +97,7 @@ Pour le réglage des paramètres de l'algorithme Random Forest, nous avons utili
     \item \textbf{criterion :} ["gini", "entropy"] la fonction pour mesurer la qualité d'une division dans chaque arbre
 \end{itemize}
 Voici le diagramme d'importance des caractéristiques pour le modèle Random Forest avec les meilleurs paramètres trouvés :
-\begin{figure}[H][
+\begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{random_forest/feature_importance.png}
     \caption{Random Forest - Feature Importance}
@@ -112,8 +118,8 @@ Les resultats finaux obtenus avec KNN après le réglage des paramètres et l'ut
 \hline
 \textbf{Configuration} & \textbf{Criterion} & \textbf{N Estimators}  & \textbf{Max Features} \\
 \hline
-Sans réduction de dimensionnalité & gini & 100 & log2 \\
-Avec réduction de dimensionnalité & gini & 100 & log2 \\
+Sans PCA & gini & 100 & log2 \\
+Avec PCA & gini & 100 & log2 \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
@@ -126,8 +132,8 @@ Avec réduction de dimensionnalité & gini & 100 & log2 \\
 \hline
 \textbf{Configuration} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\
 \hline
-Sans réduction de dimensionnalité & 0.9985 & 0.9969 & 1 & 0.9985 \\
-Avec réduction de dimensionnalité & 0.9434 & 0.9108 & 0.9829 & 0.9455 \\
+Sans PCA & 0.9985 & 0.9969 & 1 & 0.9985 \\
+Avec PCA & 0.9434 & 0.9108 & 0.9829 & 0.9455 \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
@@ -136,11 +142,22 @@ Avec réduction de dimensionnalité & 0.9434 & 0.9108 & 0.9829 & 0.9455 \\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{random_forest/final_no_pca.png}
-    \caption{Random Forest - Final Results with no PCA}
-    \includegraphics[width=1\textwidth]{random_forest/final_with_pca.png}
-    \caption{Random Forest - Final Results with PCA}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{random_forest/final_no_pca.png}
+        \caption{Random Forest – Résultats finaux sans PCA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{random_forest/final_with_pca.png}
+        \caption{Random Forest – Résultats finaux avec PCA}
+    \end{subfigure}
+
+    \caption{Comparaison des performances finales du Random Forest avec et sans réduction de dimensionnalité (PCA)}
 \end{figure}
+
 
 On observe que la réduction de dimensionnalité a eu un impact négatif sur les performances de l'algorithme Random Forest dans ce cas, contrairement à l'arbre de décision. Cependant, elle a permis de réduire significativement le temps de calcul et les ressources nécessaires pour l'entraînement et la prédiction du modèle en réduisant tous les caractéristiques du dataset en une seule composante.
 On remarque aussi que les paramètres optimaux restent les mêmes avant et après la réduction de dimensionnalité.

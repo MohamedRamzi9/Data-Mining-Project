@@ -7,18 +7,19 @@
 
 \subsection{Decision Tree}
 
-\subsubsection{Definition}
-\textbf{Decision Tree} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en divisant récursivement l'espace des caractéristiques en sous-ensembles basés sur des conditions de seuil sur les caractéristiques, formant ainsi une structure arborescente où chaque nœud interne représente une condition de décision et chaque feuille représente une prédiction de classe ou de valeur.
+% \subsubsection{Definition}
+% \textbf{Decision Tree} est un algorithme d'apprentissage supervisé utilisé pour la classification et la régression. Il fonctionne en divisant récursivement l'espace des caractéristiques en sous-ensembles basés sur des conditions de seuil sur les caractéristiques, formant ainsi une structure arborescente où chaque nœud interne représente une condition de décision et chaque feuille représente une prédiction de classe ou de valeur.
 
-Les critères couramment utilisés pour mesurer la qualité des divisions incluent l'indice de Gini, le gain d'information (entropie) et la réduction de la variance.
+% Les critères couramment utilisés pour mesurer la qualité des divisions incluent l'indice de Gini, le gain d'information (entropie) et la réduction de la variance.
 
-Les paramètres clés de l'algorithme Decision Tree incluent :
-\begin{itemize}
-    \item \textbf{Max Depth :} La profondeur maximale de l'arbre, généralement utilisé pour contrôler la complexité de l'arbre et éviter le surapprentissage.
-    \item \textbf{Min Samples Split :} Le nombre minimum d'échantillons requis pour diviser un nœud, généralement fixé à la valeur minimale de 2.
-    \item \textbf{Min Samples Leaf :} Le nombre minimum d'échantillons requis pour être à une feuille, généralement fixé à la valeur minimale de 1.
-    \item \textbf{Criterion :} La fonction utilisée pour mesurer la qualité des divisions (par exemple, Gini, Entropie).
-\end{itemize}
+% Les paramètres clés de l'algorithme Decision Tree incluent :
+% \begin{itemize}
+%     \item \textbf{Max Depth :} La profondeur maximale de l'arbre, généralement utilisé pour contrôler la complexité de l'arbre et éviter le surapprentissage.
+%     \item \textbf{Min Samples Split :} Le nombre minimum d'échantillons requis pour diviser un nœud, généralement fixé à la valeur minimale de 2.
+%     \item \textbf{Min Samples Leaf :} Le nombre minimum d'échantillons requis pour être à une feuille, généralement fixé à la valeur minimale de 1.
+%     \item \textbf{Criterion :} La fonction utilisée pour mesurer la qualité des divisions (par exemple, Gini, Entropie).
+% \end{itemize}
+
 
 \subsubsection{Implemenation from scratch}
 Voici notre implémentation de l'algorithme Decision Tree en Python.
@@ -43,33 +44,38 @@ L'algorithme de Decision Tree est sensible à la distribution des classes dans l
         \includegraphics[width=1\textwidth]{decision_tree/original.png}
         \caption{Decision Tree avec données originales}
     \end{figure}
-    \item \textbf{Random Under Sampling :} 
-    \begin{figure}
+    \begin{figure}[H]
         \centering
-        \includegraphics[width=1\textwidth]{decision_tree/random_under_sampling.png}
-        \caption{Decision Tree avec données random under sampling}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{decision_tree/random_under_sampling.png}
+            \caption{Decision Tree avec données Random Under Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{decision_tree/random_over_sampling.png}
+            \caption{Decision Tree avec données Random Over Sampling}
+        \end{subfigure}
+
+        \vspace{0.5cm}
+
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{decision_tree/smote_over_sampling.png}
+            \caption{Decision Tree avec données SMOTE Over Sampling}
+        \end{subfigure}
+        \hfill
+        \begin{subfigure}{0.48\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{decision_tree/tomek_under_sampling.png}
+            \caption{Decision Tree avec données Tomek Under Sampling}
+        \end{subfigure}
+
+        \caption{Comparaison des performances du Decision Tree avec différentes techniques de rééchantillonnage}
     \end{figure}
 
-    \item \textbf{Ranodom Over Sampling :} 
-    \begin{figure}
-        \centering
-        \includegraphics[width=1\textwidth]{decision_tree/random_over_sampling.png}
-        \caption{Decision Tree avec données random over sampling}
-    \end{figure}
-    
-    \item \textbf{Smote Over Sampling :}
-    \begin{figure}
-        \centering
-        \includegraphics[width=1\textwidth]{decision_tree/smote_over_sampling.png}
-        \caption{Decision Tree avec données smote over sampling}
-    \end{figure}
-    
-    \item \textbf{Tomek Under Sampling :} 
-    \begin{figure}
-        \centering
-        \includegraphics[width=1\textwidth]{decision_tree/tomek_under_sampling.png}
-        \caption{Decision Tree avec données tomek under sampling}
-    \end{figure}
 \end{itemize}
 À la fin la meilleure technique de balancement pour Decision Tree est \textbf{Random Over Sampling} avec les resultats suivants :
 \begin{itemize}
@@ -99,12 +105,22 @@ Les resultats finaux obtenus avec KNN après le réglage des paramètres et l'ut
 
 \begin{table}[h]
 \centering
-\begin{tabular}{|l|c|c|c|c|c|}
+\begin{tabular}{|l|l|
+>{\centering\arraybackslash}p{2.2cm}|
+>{\centering\arraybackslash}p{2.8cm}|
+>{\centering\arraybackslash}p{2.8cm}|
+>{\centering\arraybackslash}p{2.5cm}|}
 \hline
-\textbf{Configuration} & \textbf{Criterion} & \textbf{Max Depth} & \textbf{Min Samples Split} & \textbf{Min Samples Leaf} & \textbf{Max Features} \\
+\textbf{Configuration} &
+\textbf{Criterion} &
+\textbf{Max Depth} &
+\textbf{Min Samples Split} &
+\textbf{Min Samples Leaf} &
+\textbf{Max Features} \\
 \hline
-Sans réduction de dimensionnalité & gini & 39 & 2 & 1 & None \\
-Avec réduction de dimensionnalité & gini & 50 & 2 & 1 & log2 \\
+
+Sans PCA & gini & 39 & 2 & 1 & None \\
+Avec PCA & gini & 50 & 2 & 1 & log2 \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
@@ -117,21 +133,32 @@ Avec réduction de dimensionnalité & gini & 50 & 2 & 1 & log2 \\
 \hline
 \textbf{Configuration} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} \\
 \hline
-Sans réduction de dimensionnalité & 0.9706 & 0.9528 & 0.9902 & 0.9711 \\
-Avec réduction de dimensionnalité & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
+Sans PCA & 0.9706 & 0.9528 & 0.9902 & 0.9711 \\
+Avec PCA & 0.9694 & 0.9509 & 0.9898 & 0.9700 \\
 \hline
 \end{tabular}
 \caption{Comparaison des performances avec et sans réduction de dimensionnalité}
 \label{tab:decision_tree-dim-reduction-comparison}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{decision_tree/final_no_pca.png}
-    \caption{Decision Tree - Final Results with no PCA}
-    \includegraphics[width=1\textwidth]{decision_tree/final_with_pca.png}
-    \caption{Decision Tree - Final Results with PCA}
+
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{decision_tree/final_no_pca.png}
+        \caption{Decision Tree - Résultats finaux sans PCA}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{decision_tree/final_with_pca.png}
+        \caption{Decision Tree - Résultats finaux avec PCA}
+    \end{subfigure}
+
+    \caption{Comparaison des performances finales du Decision Tree avec et sans réduction de dimensionnalité (PCA)}
 \end{figure}
+
 
 Nous observons que la réduction de dimensionnalité n'a pas eu un impact significatif sur les performances de l'algorithme Decision Tree dans ce cas, mais elle a permis de réduire significativement le temps de calcul et les ressources nécessaires pour l'entraînement et la prédiction du modèle en réduisant tous les caractéristiques du dataset en une seule composante.
 
